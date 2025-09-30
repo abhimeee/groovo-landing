@@ -20,13 +20,13 @@ const Faq = () => {
                 onClick={() => setActiveQuestion(index)}
               >
                 <div className="flex items-center gap-2 cursor-pointer">
-                  <h4 className="flex-1 font-semibold text-lg text-black">
+                  <h4 className="flex-1 font-semibold text-xl sm:text-2xl text-black">
                     {index + 1}. {item.question}
                   </h4>
                   <Image alt="" src={"/down.svg"} width={12} height={6} />
                 </div>
                 {activeQuestion === index && (
-                  <p className="text-base text-activeButton w-full xl:w-[550px] pt-4 mb-2">
+                  <p className="text-lg sm:text-xl text-activeButton w-full xl:w-[550px] pt-4 mb-2">
                     {item.answer}
                   </p>
                 )}

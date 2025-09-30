@@ -16,6 +16,10 @@ const config: Config = {
         primary: "#f4c64a",
         white: "white"
       },
+      fontFamily: {
+        heading: ['Playfair Display', 'serif'],
+        body: ['Poppins', 'sans-serif'],
+      },
       borderRadius: {
         DEFAULT: "21px",
         sm: "8px"
