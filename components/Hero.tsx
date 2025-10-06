@@ -36,7 +36,7 @@ const Hero = () => {
             </span>
           )}
         </h1>
-        <span className="font-body text-xl sm:text-3xl xl:text-4xl text-black">
+        <span className="font-body text-lg sm:text-2xl xl:text-3xl text-black max-w-full break-words">
           {config.contents.description}
         </span>
         <div className="flex flex-col gap-8">
