@@ -4,7 +4,6 @@ import { useMemo } from "react";
 // config
 import config from "@/config/general";
 // components
-import Form from "./Form";
 import YouTubeVideo from "./YouTubeVideo";
 import { motion } from "framer-motion";
 
@@ -52,10 +51,10 @@ const Hero = () => {
           </motion.div>
           
           <motion.button 
-            className="ml-onclick-form bg-primary hover:bg-primary/90 rounded-xl py-5 px-20 text-black uppercase font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-fit"
+            className="bg-primary hover:bg-primary/90 rounded-xl py-5 px-20 text-black uppercase font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 w-fit"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            onClick={() => window.ml('show', 'yMGYEW', true)}
+            onClick={() => window.open(config.subscribeForm, '_blank')}
           >
             Join Waitlist
           </motion.button>
@@ -63,7 +62,7 @@ const Hero = () => {
       </div>
 
       {/* Right side - Video */}
-      <div className="w-full xl:w-[400px] flex justify-center xl:justify-end -mt-4 xl:mt-0">
+      <div className="w-full xl:w-[400px] flex justify-center xl:justify-end transform -translate-y-16">
         <YouTubeVideo 
           videoId="YOUR_VIDEO_ID_HERE"
           className="w-[280px] sm:w-[350px] xl:w-[400px]"

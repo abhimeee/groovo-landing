@@ -2,7 +2,7 @@ const config = {
     domain: "groovo.ai",
     title: "Groovo AI | Your Personal AI Dance Coach",
     description: "Groovo AI is your personal AI-powered dance coach and battle buddy. Learn any dance routine with step-by-step guidance and real-time feedback through your phone camera.",
-    subscribeForm: "", // TODO: Add MailerLite form URL here
+    subscribeForm: "https://forms.gle/NJJaBEqDF5P9YHaR9",
 
     socials: {
         twitter: "", // TODO: Add Groovo social links

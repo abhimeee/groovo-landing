@@ -7,7 +7,7 @@ interface YouTubeVideoProps {
 
 const YouTubeVideo = ({ videoId, className = "" }: YouTubeVideoProps) => {
   return (
-    <div className={`relative w-full m-4 max-w-[350px] aspect-[9/16] ${className}`}>
+    <div className={`relative w-full max-w-[350px] aspect-[9/16] ${className}`}>
       <iframe
         src={`https://www.youtube.com/embed/ahFim1aHsx8?autoplay=1&mute=0&controls=1&showinfo=0&rel=0`}
         title="Product Demo"
