@@ -2,11 +2,17 @@
 import config from "@/config/general";
 import { motion } from "framer-motion";
 
+declare global {
+  interface Window {
+    ml: (...args: any[]) => void;
+  }
+}
+
 const Price = () => {
   return (
     <section className="mb-24 px-4">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-activeButton mb-4">Pricing</h2>
+        <h2 className="text-4xl font-bold text-activeButton mb-4">The Groovo Experience</h2>
         <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
       </div>
       
@@ -37,27 +43,6 @@ const Price = () => {
                 </motion.li>
               ))}
             </ul>
-            
-            <div className="flex flex-col items-center gap-8">
-              <motion.div
-                className="text-center"
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-              >
-                <span className="text-5xl font-bold text-activeButton block mb-2">
-                  {config.contents.price.price}
-                </span>
-                <span className="text-sm text-gray-500 uppercase tracking-wider">Limited Time Offer</span>
-              </motion.div>
-              
-              <motion.button 
-                className="bg-primary hover:bg-primary/90 rounded-xl py-5 px-20 text-black uppercase font-semibold text-base shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get started
-              </motion.button>
-            </div>
           </div>
         </div>
       </motion.div>
