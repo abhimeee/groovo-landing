@@ -62,7 +62,7 @@ const Hero = () => {
       </div>
 
       {/* Right side - Video */}
-      <div className="w-full xl:w-[400px] flex justify-center xl:justify-end transform -translate-y-16">
+      <div className="w-full xl:w-[400px] flex justify-center xl:justify-end transform -translate-y-8">
         <YouTubeVideo 
           videoId="YOUR_VIDEO_ID_HERE"
           className="w-[280px] sm:w-[350px] xl:w-[400px]"
